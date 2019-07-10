@@ -3,7 +3,10 @@ import React from "react";
 const SpecialButton = props => {
   return (
     <>
-      <button onClick={() => props.specialHandler(props.special)}>
+      <button
+        className="specialButton"
+        onClick={() => props.specialHandler(props.special)}
+      >
         {props.special}
       </button>
     </>

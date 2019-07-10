@@ -4,7 +4,7 @@ const NumberButton = props => {
   return (
     <>
       <button
-        className="p-1 "
+        className={props.number === "0" ? "numberButton zero" : "numberButton"}
         onClick={() => props.numberHandler(props.number)}
       >
         {props.number}

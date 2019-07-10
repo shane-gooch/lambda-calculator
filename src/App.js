@@ -37,12 +37,18 @@ function App() {
 
   return (
     <div className="container">
-      <Logo />
       <div className="App">
+        <Logo />
         <Display display={display} />
-        <Specials specialHandler={specialHandler} />
-        <Numbers numberHandler={numberHandler} />
-        <Operators operatorHandler={operatorHandler} />
+        <div className="calcOperations">
+          <div className="row">
+            <div>
+              <Specials specialHandler={specialHandler} />
+              <Numbers numberHandler={numberHandler} />
+            </div>
+            <Operators operatorHandler={operatorHandler} />
+          </div>
+        </div>
       </div>
     </div>
   );
